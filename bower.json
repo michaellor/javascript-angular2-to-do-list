@@ -1,0 +1,15 @@
+{
+  "name": "angular2-skeleton-app",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
