@@ -5,9 +5,16 @@ import { Task } from './task.model';
   selector: 'task-display',
   inputs: ['task'],
   template: `
-    <h3>{{ task.description }}</h3>
+  <div>
+    <input *ngIf="task.done" type="checkbox" checked (click)="toggleDone(false)"/>
+    <input *ngIf="!task.done" type="checkbox" (click)="toggleDone(true)"/>
+    <label>{{ task.description }}</label>
+  </div>
   `
 })
 export class TaskComponent {
   public task: Task;
+  toggleDone(setState: boolean){
+    this.task.done = setState;
+  }
 }
