@@ -1,18 +1,21 @@
 import { Component, EventEmitter } from 'angular2/core';
 import { TaskComponent } from './task.component';
 import { Task } from './task.model';
+import { EditTaskDetailsComponent } from './edit-task-details.component';
 
 @Component({
   selector: 'task-list',
   inputs: ['taskList'],
   outputs: ['onTaskSelect'],
-  directives: [TaskComponent],
+  directives: [TaskComponent, EditTaskDetailsComponent],
   template: `
   <task-display *ngFor="#currentTask of taskList"
     (click)="taskClicked(currentTask)"
     [class.selected]="currentTask === selectedTask"
     [task]="currentTask">
   </task-display>
+  <edit-task-details *ngIf="selectedTask" [task]="selectedTask">
+  </edit-task-details>
   `
 })
 export class TaskListComponent {
