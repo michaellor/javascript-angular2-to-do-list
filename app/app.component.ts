@@ -15,7 +15,6 @@ import { Task } from './task.model';
     </div>
   `
 })
-
 export class AppComponent {
   public tasks: Task[];
   constructor(){
@@ -28,12 +27,5 @@ export class AppComponent {
   }
   taskWasSelected(clickedTask: Task): void {
   console.log("Parent", clickedTask);
-  }
-}
-
-export class Task {
-  public done: boolean = false;
-  constructor(public description: string, public id: number) {
-
   }
 }
