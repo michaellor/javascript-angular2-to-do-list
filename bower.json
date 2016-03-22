@@ -4,7 +4,7 @@
   "main": "",
   "license": "ISC",
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/michaellor/javascript-angularJS-skeleton",
   "ignore": [
     "**/.*",
     "node_modules",
