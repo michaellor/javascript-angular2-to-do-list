@@ -11,5 +11,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "authors": [
+    "Michael & Yvonna"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
 }
