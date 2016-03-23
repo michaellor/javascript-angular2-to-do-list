@@ -8,8 +8,8 @@ import { Task } from './task.model';
   <div class="task-form">
     <h3>Edit Description: </h3>
     <input [(ngModel)]="task.description" class="col-sm-8 input-lg task-form"/>
-    <select (change)=task.priority>
-      <option value="low">Low</option>
+    <select [(ngModel)]="task.priority">
+    <option value="low">Low</option>
       <option value="medium">Medium</option>
       <option value="high">High</option>
     </select>
