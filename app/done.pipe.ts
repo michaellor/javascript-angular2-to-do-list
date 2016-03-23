@@ -9,7 +9,7 @@ export class DonePipe implements PipeTransform {
   transform(input: Task[], args){
     var desiredDoneState = args[0];
     if(desiredDoneState === "done"){
-      return input.filter(function(task){
+      return input.filter((task) => {
         return task.done;
       });
     } else if (desiredDoneState === "notDone"){
